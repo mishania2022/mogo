@@ -1,0 +1,144 @@
+.footer {
+    margin-bottom: 50px;
+    &__container{
+        max-width: 1170px;
+        padding: 42px 0 31px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__mogo {
+    }
+    &__logo {        
+        margin-bottom: 46px;
+    }
+    &__form {
+    }
+    &__blogs {
+    }
+    &__title {
+      padding-bottom: 34px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
+    &__instagram {        
+        width: 270px;
+    }
+    &__gallery-instagram {
+        display: grid;
+        grid-template: repeat(3,1fr)/repeat(3,1fr);
+    }
+    &__slogan-instagram {
+    }
+    &__input{
+        padding: 15px 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #C6CBCD;
+    }
+    &__submit{
+        padding: 15px;
+        background-color: $green;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &__end{
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;        
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.mogo{
+    width: 370px;
+    &__discription {
+        margin-bottom: 35px;
+    }
+    &__followers {
+        margin-bottom: 13px;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+    &__followers>span {
+        margin-bottom: 13px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    
+    &__divider {
+        margin-bottom: 14px;
+    }
+}
+
+
+.social-net {
+    display: flex;
+    &__text {
+        margin-right: 30px;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        
+    }
+    &__gallary {
+        display: flex;
+        flex-grow: 1;
+        justify-content:space-between;
+        margin-bottom: 50px;
+    }
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.blogs{
+    width: 470px;
+    &__container {
+    }
+    &__row {
+        display: flex;
+        padding-bottom: 20px;
+    }
+    &__image {
+        width: 170px;
+        height: 105px;
+    }
+    &__content {
+        padding-left: 30px;
+    }
+    &__discription {
+      margin-bottom: 8px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+      text-transform: uppercase;
+    }
+    &__date {
+    }
+}
+
+
+
+.instagram-photo {
+
+}

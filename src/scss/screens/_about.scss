@@ -1,0 +1,13 @@
+.about{
+    text-align: center;
+    padding: 42px 0 108px;
+    
+    &__container{
+        max-width: 1170px;
+    }
+
+    &__gallery{
+      display: flex;
+      justify-content: space-between;
+    }    
+}

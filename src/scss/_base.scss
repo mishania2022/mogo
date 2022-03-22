@@ -1,0 +1,108 @@
+@mixin base-font-styles{
+
+}
+/*указать переменные вместо названий шрифтов*/
+body,h5{
+font-family: $raleway-font-stack;
+font-size: 18px;
+line-height: 21px;
+}
+
+.container{
+  max-width: 1510px;
+  margin: 0 auto;
+  
+&__overlay{
+  position: relative;
+  
+
+  &:hover:after{
+    position: absolute;
+    content: "";
+	  display: block;    
+	  width: 100%;
+	  height: 100%;    
+	 	top: 0;      
+	  left: 0;   
+	  background: transparent;
+    background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+    opacity: 0.8;    
+  } 
+}  
+}
+
+h1{
+  font-family: $raleway-font-stack;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 175.54px;
+  text-transform: uppercase;      
+}
+
+h2{
+  font-family: $kaushan-font-stack;
+  font-size: 64px;  
+  font-weight: 400;
+  line-height: 93px;
+}
+
+h3{
+  font-family: $raleway-font-stack;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+h4{
+  font-family: R$raleway-font-stack;
+  font-size: 24px;  
+  font-weight: 900;
+  line-height: 28px;
+}
+
+ h6{
+  font-family: $raleway-font-stack;
+  font-size: 13px;  
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.title{
+  font-family: "Kaushan Script";
+  font-size: 30px;
+  line-height: 44px;
+  color: $dark;
+  padding: 18px 20px;
+}
+
+.subtitle{
+  font-size:36px ;
+  line-height: 43.53px;
+  font-weight: 900;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.subtitle_colored{
+  color: $red;
+}
+
+.description{
+  padding: 38px 0;
+  font-weight: 400;
+  margin-bottom: 90px;
+}
+ .divider{
+     height: 4px;
+     background: $red;
+     max-width: 170px;
+     margin: 0 auto;
+     border: none;     
+ }
+ .divider_uncolored {
+  background: $white;  
+  }
+  hr{
+    margin-bottom: 30px;
+  }
+ 

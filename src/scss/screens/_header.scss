@@ -1,0 +1,50 @@
+.header {
+  background-image: url(/src/images/header-images/eagle.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  &__container {
+    max-width: 1170px;
+    display: flex;
+    padding: 40px 0 32px;
+    }
+    
+  &__logo {
+  }
+    
+  &__navigation {
+    margin-left: auto;
+        
+  }
+       
+}
+.navigation {
+  display: flex;
+  width: 670px;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+
+&__item {
+
+    }
+&__item-basket{
+  width: 24px;
+  height: 24px;
+  background-image: url(/src/images/header-images/basket.svg);
+  background-repeat:no-repeat ;
+  background-position: center;
+    }
+
+&__item-search{
+  width: 24px;
+  height: 24px;
+  background-image: url(/src/images/header-images/search.svg);
+  background-repeat:no-repeat ;
+  background-position: center;
+}
+}
+
+

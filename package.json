@@ -1,0 +1,27 @@
+{
+  "name": "mogo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "/src/index.html",
+  "scripts": {
+    "style": "sass --watch src/scss/main.scss src/scss/main.css",
+    "start": "parcel",
+    "build": "parcel build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mishania2022/mogo.git"
+  },
+  "author": "misha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mishania2022/mogo/issues"
+  },
+  "homepage": "https://github.com/mishania2022/mogo#readme",
+  "devDependencies": {
+    "parcel": "^2.4.0",
+    "sass": "^1.49.9"
+  }
+}
