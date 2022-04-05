@@ -1,11 +1,21 @@
 .portfolio{
     text-align: center;
-    padding-top: 84px;    
+    padding-top: 84px;
+    
+    &__container{
+      max-width: 1510px;
+    }
 
     &__gallery{
+      
       display: grid;
       grid-template: repeat(2,1fr)/repeat(4,1fr);
       
-    }    
+    }  
+    
+    &__case{
+      flex-basis: 378px;
+      height: 378px;
+    }
 }
 

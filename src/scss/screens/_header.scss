@@ -1,12 +1,15 @@
 .header {
-  background-image: url(../../images/header-images/eagle.png);
-  background-repeat: no-repeat;
-  background-position: center top;
+  position: absolute;
+  z-index: 8;
+  left: 0;
+  right: 0;
 
   &__container {
-    max-width: 1170px;
     display: flex;
-    padding: 40px 0 32px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 10px 32px;
+    margin: 0 auto;
     }
     
   &__logo {
@@ -14,37 +17,35 @@
     
   &__navigation {
     margin-left: auto;
+
+    @include mobile{
+      display: none;   
+      width: 100%;
+    }
         
   }
-       
-}
-.navigation {
-  display: flex;
-  width: 670px;
-  justify-content: space-between;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 16px;
-  color: $white;
+  &__toggler {
+    object-position: top;
+    cursor: pointer;
+    user-select: none;
+    display: none;
 
-&__item {
-
+    @include mobile {
+      display: inline-block;
     }
-&__item-basket{
-  width: 24px;
-  height: 24px;
-  background-image: url(/src/images/header-images/basket.svg);
-  background-repeat:no-repeat ;
-  background-position: center;
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__checkbox:checked ~ .header__navigation {
+    display: block;
+  }
+
+  &__logo-image {
+    @include mobile {
+      width: 103px;
     }
-
-&__item-search{
-  width: 24px;
-  height: 24px;
-  background-image: url(/src/images/header-images/search.svg);
-  background-repeat:no-repeat ;
-  background-position: center;
+  }     
 }
-}
-
-

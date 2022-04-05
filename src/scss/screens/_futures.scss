@@ -1,6 +1,6 @@
 .futures{
   
-  background-color: $green;
+  background-color: map-get($colors, green);
 
   &__container{
     max-width: 1170px;
@@ -20,8 +20,18 @@
     font-weight: 700;
     line-height: 28px;
     text-align: center;
-    color: $white;
-    border: 1px solid #FFFFFF;    
+    color: map-get($colors, white);
+    border: 1px solid #FFFFFF;  
+    
+    @include tablet{      
+      font-size: rem(18px);
+      line-height: rem(21px);
+    }
+  
+    @include mobile{
+      font-size: rem(24px);
+      line-height: rem(28px);
+    }
   }
   &__image>span{
     display: inline-block;
@@ -29,5 +39,15 @@
     font-size: 64px;
     font-weight: 700;
     line-height: 75px;   
+
+    @include tablet{      
+      font-size: rem(18px);
+      line-height: rem(21px);
+    }
+  
+    @include mobile{
+      font-size: rem(24px);
+      line-height: rem(28px);
+    }
   }
     }

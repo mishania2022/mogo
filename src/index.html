@@ -3,51 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./scss/main.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />  
+    <link rel="stylesheet" href="./scss/main.scss">  
+    
 </head>
 <body>
-<div class="container">
-  <div class="container__overlay">
-    <header class="header">
-      <div class="header__container container">
-        <div class="header__logo">
-          <div class="logo"></div>
-        </div>
-        <nav class="header__navigation">
-          <ul class="navigation">
-            <li class="navigation__item">About</li>
-            <li class="navigation__item">service</li>
-            <li class="navigation__item">work</li>
-            <li class="navigation__item">blog</li>
-            <li class="navigation__item">Contact</li>
-            <li class="navigation__item navigation__item-basket"></li>
-            <li class="navigation__item navigation__item-search"></li>
-          </ul>
-        </nav>
-      </div>  
-    </header>
-    <section class="hero">
-      <div class="hero__container container">
-        <h2 class="hero__title">Creative Template</h2>
-        <h1 class="hero__subtitle">
-          Welcome<br>
-          to MoGo
-        </h1>
-        <div class="hero__divider">
-          <hr class="divider divider_uncolored" />
-        </div>    
-        <button class="hero__button button">learn more</button>
-        <div class="hero__slider">
-          <div class="hero__slider-item"><span>01</span> intro</div>
-          <div class="hero__slider-item"><span>02</span> worck</div>
-          <div class="hero__slider-item"><span>03</span> about</div>
-          <div class="hero__slider-item"><span>04</span> contacts</div>
-        </div>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__logo">
+        <div class="logo"></div>
       </div>
-    </section>
-  </div>
+      <input id="burger-checkbox" class="header__checkbox" type="checkbox" />      
+              <label class="header__label" for="burger-checkbox">
+                <img class="header__toggler" src="./images/header-images/burger.svg" alt="Burger" />
+              </label>
+      <nav class="header__navigation">
+        <ul class="navigation">
+          <li><a href="#" class="navigation__item">About</a></li>
+          <li><a href="#" class="navigation__item">service</a></li>
+          <li><a href="#" class="navigation__item">work</a></li>
+          <li><a href="#" class="navigation__item">blog</a></li>
+          <li><a href="#" class="navigation__item">Contact</a></li>
+          <li><a href="#" class="navigation__item navigation__item_img"><img src="/src/images/header-images/basket.svg" alt="basket"></a></li>
+          <li><a href="#" class="navigation__item navigation__item_img"><img src="/src/images/header-images/search.svg" alt="search"></a></li>
+        </ul>
+      </nav>
+    </div>  
+  </header>
+  <section class="hero">
+    <div class="hero__container container">
+      <h2 class="hero__title">Creative Template</h2>
+      <h1 class="hero__subtitle">
+        Welcome<br>
+        to MoGo
+      </h1>
+      <div class="hero__divider">
+        <hr class="divider divider_uncolored" />
+      </div>    
+      <button class="hero__button button">learn more</button>
+      <div class="hero__slider">
+        <button class="hero__slider-item">
+          <span>01</span>
+          intro
+        </button>
+        <button class="hero__slider-item">
+          <span>02</span> 
+          worck
+        </button>
+        <button class="hero__slider-item">
+          <span>03</span> 
+          about
+        </button>
+        <button class="hero__slider-item">
+          <span>04</span> 
+          contacts
+        </button>
+      </div>
+    </div>
+  </section>
     <section class="portfolio">
       <div class="portfolio__container container">
         <h2 class="title">What we do</h2>
@@ -159,9 +175,37 @@
           sit fermentum risus feugiat.
         </p>
         <div class="about__gallery">
-          <img src="/src/images/about/image_1.png" alt="image_1" class="about__image">
-          <img src="/src/images/about/image_2.png" alt="image_2" class="about__image">
-          <img src="/src/images/about/image_3.png" alt="image_3" class="about__image">
+          <div class="about__case case">
+            <img
+            src="/src/images/about/image_1.png"
+            alt="image_1" 
+            class="case__image">
+            <div class="case__overlay case__overlay_moved">
+              <img class="case__icon" src="/src/images/about/person.svg" alt="person" />
+              <h4 class="case__title">Super team</h4>
+            </div>
+          </div>
+
+          <div class="about__case case">
+            <img 
+            src="/src/images/about/image_2.png" 
+            alt="image_2" 
+            class="case__image">
+            <div class="case__overlay case__overlay_moved">
+              <img class="case__icon" src="/src/images/about/person.svg" alt="person" />
+              <h4 class="case__title">Super team</h4>
+            </div>
+          </div>
+          <div class="about__case case">
+            <img 
+            src="/src/images/about/image_3.png" 
+            alt="image_3" 
+            class="case__image">
+            <div class="case__overlay case__overlay_moved">
+              <img class="case__icon" src="/src/images/about/person.svg" alt="person" />
+              <h4 class="case__title">Super team</h4>
+            </div>
+          </div>
         </div>        
       </div>
     </section>
@@ -191,28 +235,92 @@
         </div>
       </div>
     </section>
+    
     <section class="reviews">
-      <div class="reviews__container container">
-        <div class="reviews__wrapper">
-          <div class="reviews__icon">
-            <div class="reviews__icon-messege">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+             
+          <div class="swiper-slide">
+            <div class="reviews__icon">
+              <div class="reviews__icon-messege"> </div>
+            </div>          
+            <div class="reviews__aside">
+              <div class="reviews__discription">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                 massa sit.
+              </div>
+              <div class="reviews__content">
+                <div class="reviews__divider"></div>
+                <div class="reviews__autor">Jon Doe</div>
+              </div>
+            </div>
           </div>
+
+          <div class="swiper-slide">
+            <div class="reviews__icon">
+              <div class="reviews__icon-messege"> </div>
+            </div>          
+            <div class="reviews__aside">
+              <div class="reviews__discription">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                 massa sit.
+              </div>
+              <div class="reviews__content">
+                <div class="reviews__divider"></div>
+                <div class="reviews__autor">Jon Doe</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="reviews__icon">
+              <div class="reviews__icon-messege"> </div>
+            </div>          
+            <div class="reviews__aside">
+              <div class="reviews__discription">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                 massa sit.
+              </div>
+              <div class="reviews__content">
+                <div class="reviews__divider"></div>
+                <div class="reviews__autor">Jon Doe</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="reviews__icon">
+              <div class="reviews__icon-messege"> </div>
+            </div>          
+            <div class="reviews__aside">
+              <div class="reviews__discription">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+                vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
+                 massa sit.
+              </div>
+              <div class="reviews__content">
+                <div class="reviews__divider"></div>
+                <div class="reviews__autor">Jon Doe</div>
+              </div>
+            </div>
           </div>          
-          <div class="reviews__aside">
-            <div class="reviews__discription">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Neque nec diam platea ullamcorper feugiat amet. Id aliquet
-              vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis,
-               massa sit.
-            </div>
-            <div class="reviews__content">
-              <div class="reviews__divider"></div>
-              <div class="reviews__autor">Jon Doe</div>
-            </div>
-          </div>
-        </div>
-      </div>
+         </div>
+
+       <div class="swiper-pagination"></div>
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next"></div>
+       
+      </div>  
+      
     </section>
+
     <section class="map">
       <div class="map__container container">
         <h2 class="title"><img class="map__location" src="/src/images/map/location.svg" alt="location"></h2>
@@ -250,7 +358,7 @@
               </div>              
             </div>
             <form action="" class="footer__form">
-              <p><input class="footer__input"type="text" placeholder="Your Email" name="a"><input class="footer__submit" type="submit" value="subscribe"></p>
+              <input class="footer__input"type="text" placeholder="Your Email" name="a"><input class="footer__submit" type="submit" value="subscribe">
             </form>
           </div>
           <div class="footer__blogs blogs">
@@ -304,7 +412,9 @@
       </div>
       <hr>
       <div class="footer__end">Copyright © 2021 mogo. All Rights Reserved</div>
-    </footer>
-</div>    
+    </footer>  
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/script.js"></script>    
+    
 </body>
 </html>

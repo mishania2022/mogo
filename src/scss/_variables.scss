@@ -1,12 +1,23 @@
+$base-font-size: 16px;
+
 $kaushan-font-stack: "Kaushan Script", Arial, sans-serif;
 $raleway-font-stack: "Raleway", Arial, sans-serif;
 $montserrat-font-stack: "Montserrat", Arial, sans-serif;
 
-$red:#f38281;
-$yellow:#F9EFCF;
-$orange:#F4BF87;;
-$green:#95E1D3;;
-$dark:rgba(45, 48, 51, 1);
-$gray:#F5F5F5;
-$LightGray: #F8F8F8;
-$white: #FFFFFF;
+$colors:(
+  red:#f38281,
+  yellow:#F9EFCF,
+  orange:#F4BF87,
+  green:#95E1D3,
+  dark:#2d3033,
+  gray:#F5F5F5,
+  LightGray: #F8F8F8,
+  white: #FFFFFF,
+);
+
+
+
+$breakpoints: (
+  mobile: rem(768px),
+  tablet: rem(1024px),
+);

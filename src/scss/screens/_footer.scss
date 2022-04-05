@@ -8,17 +8,29 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+
+        @include mobile{
+            display:block;
+        }
+            
     }
 
     &__mogo {
+        flex-basis: 370px;
     }
+
     &__logo {        
         margin-bottom: 46px;
     }
+
     &__form {
+        display: flex;
     }
+
     &__blogs {
+        flex-basis: 470px;
     }
+
     &__title {
       padding-bottom: 34px;
       font-weight: 700;
@@ -27,11 +39,16 @@
       text-transform: uppercase;
     }
     &__instagram {        
-        width: 270px;
+        flex-basis: 270px;
     }
     &__gallery-instagram {
         display: grid;
         grid-template: repeat(3,1fr)/repeat(3,1fr);
+        gap: 1px;
+
+        @include mobile{
+          max-width: 280px;
+          }
     }
     &__slogan-instagram {
     }
@@ -42,15 +59,28 @@
         line-height: 21px;
         text-align: center;
         color: #C6CBCD;
+        
+
+        @include tablet{
+          font-size: rem(14px);
+          line-height: rem(16px);
+          max-width: 140px;
+        }
     }
     &__submit{
         padding: 15px;
-        background-color: $green;
+        background-color: map-get($colors, green);
         font-weight: 700;
         font-size: 18px;
         line-height: 21px;
         text-transform: uppercase;
         color: #ffffff;
+
+        @include tablet{
+          font-size: rem(14px);
+          line-height: rem(16px);
+          max-width: 130px;
+        }
     }
     &__end{
         font-weight: 700;
@@ -62,24 +92,38 @@
 }
 
 .mogo{
-    width: 370px;
     &__discription {
         margin-bottom: 35px;
+
+        @include mobile{
+            font-size: rem(16px);
+            line-height: rem(18px);
+          }
     }
     &__followers {
         margin-bottom: 13px;
         font-style: italic;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: rem(18px);
+        line-height: rem(30px);
         text-transform: uppercase;
+
+        @include mobile{
+            font-size: rem(14px);
+            line-height: rem(30px);
+          }
     }
     &__followers>span {
         margin-bottom: 13px;
         font-weight: 700;
-        font-size: 36px;
-        line-height: 30px;
+        font-size: rem(36px);
+        line-height: rem(30px);
         text-transform: uppercase;
+
+        @include mobile{
+            font-size: rem(24px);
+            line-height: rem(30px);
+          }
     }
 
     
@@ -96,7 +140,7 @@
         font-style: italic;
         font-weight: 400;
         font-size: 13px;
-        line-height: 15px;
+        line-height: 15px;        
         
     }
     &__gallary {
@@ -104,6 +148,10 @@
         flex-grow: 1;
         justify-content:space-between;
         margin-bottom: 50px;
+
+        @include mobile{
+          max-width: 233px;
+        }
     }
     &__icon {
         width: 24px;
@@ -112,7 +160,7 @@
 }
 
 .blogs{
-    width: 470px;
+    
     &__container {
     }
     &__row {
@@ -132,13 +180,13 @@
       font-size: 18px;
       line-height: 21px;
       text-transform: uppercase;
+
+      @include tablet{
+        font-size: rem(14px);
+        line-height: rem(16px);
+        
+      }
     }
     &__date {
     }
-}
-
-
-
-.instagram-photo {
-
 }
