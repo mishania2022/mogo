@@ -1,114 +1,113 @@
 .swiper {
   max-width: 1500px;
   margin-bottom: 20px;
-  
-  &-wrapper{
-    display: flex;   
 
+  &-wrapper {
+    display: flex;
   }
 
   &-slide {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-   @include mobile {
-      flex-direction: column;      
-   }
-  } 
-  
-  &-button-prev,
-  &-button-next{
     @include mobile {
-      display: none;      
-   }
+      flex-direction: column;
+    }
   }
-  &-pagination{
+
+  &-button-prev,
+  &-button-next {
+    @include mobile {
+      display: none;
+    }
+  }
+  &-pagination {
     display: none;
 
     @include mobile {
       display: block;
-      position: static;      
-   }
+      position: static;
+    }
   }
 }
 
 .reviews {
-    background-color: map-get($colors, LightGray);
+  background-color: map-get($colors, LightGray);
 
-    
-    &__icon {
-        width: 170px;
-        height: 170px;        
-        padding: 35px;
-        margin: 35px;
-        border: 1px solid map-get($colors, green);
+  &__icon {
+    width: 170px;
+    height: 170px;
+    padding: 35px;
+    margin: 35px;
+    border: 1px solid map-get($colors, green);
 
-        @include tablet{      
-          width: 115.28px;
-          height: 115.28px;
-          padding: 23;
-        }
+    @include tablet {
+      width: 115.28px;
+      height: 115.28px;
+      padding: 23;
+    }
 
-        @include mobile {
-          display: none;     
-       }
+    @include mobile {
+      display: none;
     }
-    &__icon-messege{
-        width: 100px;
-        height: 100px;
-        background-image: url(/src/images/reviews/messege.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
+  }
+  &__icon-messege {
+    width: 100px;
+    height: 100px;
+    background-image: url(/src/images/reviews/messege.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 
-        @include tablet{      
-          width: 67.81px;
-          height: 67.81px;
-        }
+    @include tablet {
+      width: 67.81px;
+      height: 67.81px;
     }
-    &__aside {
-        display: flex;
-        flex-direction: column;
-        max-width: 770px;
+  }
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    max-width: 770px;
 
-        @include mobile {
-          display: block;      
-       }
+    @include mobile {
+      display: block;
     }
-    &__discription {
-        margin-bottom: 21px;
-        font-size: rem(24px);
-        font-style: italic;
-        font-weight: 500;
-        line-height: rem(28px);
+  }
+  &__discription {
+    padding: 10px 5px;
+    margin-bottom: 21px;
+    align-content: center;
+    font-size: rem(24px);
+    font-style: italic;
+    font-weight: 500;
+    line-height: rem(28px);
 
-        @include tablet{    
-          max-width: 655px;  
-          font-size: rem(18px);
-          line-height: rem(21px);
-        }
+    @include tablet {
+      max-width: 655px;
+      font-size: rem(18px);
+      line-height: rem(21px);
     }
-    &__content {
-        display: flex;
-        
-    }
-    &__divider {
-      height: 4px;
-      margin: 27px 56px 0 0 ;
-      background: map-get($colors, red);
-      width: 70px;      
-      border: none; 
-    }
-    &__autor {
-      font-family: $kaushan-font-stack;
-      font-weight: 400;
-      font-size: 30px;
-      line-height: 44px;
+  }
+  &__content {
+    display: flex;
+  }
+  &__divider {
+    height: 4px;
+    margin: 27px 56px 0 0;
+    background: map-get($colors, red);
+    width: 70px;
+    border: none;
+  }
+  &__autor {
+    font-family: $kaushan-font-stack;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
 
-      @include mobile {
-        font-size: rem(18px);
-        line-height: rem(26px); 
-     }
+    @include mobile {
+      font-size: rem(18px);
+      line-height: rem(26px);
     }
+  }
 }

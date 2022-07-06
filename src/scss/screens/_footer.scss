@@ -1,192 +1,230 @@
 .footer {
-    margin-bottom: 50px;
-    &__container{
-        max-width: 1170px;
-        padding: 42px 0 31px 0;
+  margin-bottom: 50px;
+  &__container {
+    max-width: 1170px;
+    padding: 42px 10px 31px 10px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__mogo {
+    max-width: 300px;
+    margin-inline: auto;
+    align-content: center;
+    justify-self: center;
+    align-content: center;
+  }
+
+  &__logo {
+    margin-bottom: 46px;
+  }
+
+  &__form {
+    max-width: 270px;
+    display: flex;
+
+    @include tablet {
+      max-width: 317px;
+      font-size: rem(24px);
+      line-height: rem(28px);
+      padding-top: 13px;
     }
 
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
+    @include tablet {
+      display: block;
+    }
+  }
 
-        @include mobile{
-            display:block;
-        }
-            
+  &__blogs {
+    flex-basis: 470px;
+  }
+
+  &__title {
+    align-content: center;
+    padding-bottom: 34px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+  &__instagram {
+    flex-basis: 270px;
+  }
+  &__gallery-instagram {
+    height: 270px;
+    width: 270px;
+    display: grid;
+    margin-inline: auto;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 1px;
+
+    @include tablet {
+      height: 289px;
+      width: 289px;
     }
 
-    &__mogo {
-        flex-basis: 370px;
+    @include mobile {
+      max-width: 280px;
     }
+  }
+  &__slogan-instagram {
+  }
+  &__input {
+    //max-width: 180px;
+    padding: 15px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #c6cbcd;
 
-    &__logo {        
-        margin-bottom: 46px;
+    @include tablet {
+      font-size: rem(14px);
+      line-height: rem(16px);
+      //max-width: 140px;
     }
+    @include mobile {
+        width: 100%;
+      }
+  }
+  &__submit {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: map-get($colors, green);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
 
-    &__form {
-        display: flex;
+    @include tablet {
+      font-size: rem(14px);
+      line-height: rem(16px);
+      //max-width: 130px;
     }
-
-    &__blogs {
-        flex-basis: 470px;
-    }
-
-    &__title {
-      padding-bottom: 34px;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 28px;
-      text-transform: uppercase;
-    }
-    &__instagram {        
-        flex-basis: 270px;
-    }
-    &__gallery-instagram {
-        display: grid;
-        grid-template: repeat(3,1fr)/repeat(3,1fr);
-        gap: 1px;
-
-        @include mobile{
-          max-width: 280px;
-          }
-    }
-    &__slogan-instagram {
-    }
-    &__input{
-        padding: 15px 0;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
-        color: #C6CBCD;
-        
-
-        @include tablet{
-          font-size: rem(14px);
-          line-height: rem(16px);
-          max-width: 140px;
-        }
-    }
-    &__submit{
-        padding: 15px;
-        background-color: map-get($colors, green);
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        text-transform: uppercase;
-        color: #ffffff;
-
-        @include tablet{
-          font-size: rem(14px);
-          line-height: rem(16px);
-          max-width: 130px;
-        }
-    }
-    &__end{
-        font-weight: 700;
-        font-size: 13px;
-        line-height: 15px;        
-        text-align: center;
-        text-transform: uppercase;
-    }
+    @include mobile {
+        width: 100%;
+      }
+  }
+  &__end {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
-.mogo{
-    &__discription {
-        margin-bottom: 35px;
-
-        @include mobile{
-            font-size: rem(16px);
-            line-height: rem(18px);
-          }
-    }
-    &__followers {
-        margin-bottom: 13px;
-        font-style: italic;
-        font-weight: 400;
-        font-size: rem(18px);
-        line-height: rem(30px);
-        text-transform: uppercase;
-
-        @include mobile{
-            font-size: rem(14px);
-            line-height: rem(30px);
-          }
-    }
-    &__followers>span {
-        margin-bottom: 13px;
-        font-weight: 700;
-        font-size: rem(36px);
-        line-height: rem(30px);
-        text-transform: uppercase;
-
-        @include mobile{
-            font-size: rem(24px);
-            line-height: rem(30px);
-          }
-    }
-
+.mogo {
+  &__discription {
+    margin-bottom: 35px;
     
-    &__divider {
-        margin-bottom: 14px;
+    @include mobile {
+      font-size: rem(16px);
+      line-height: rem(18px);
     }
-}
+  }
+  &__followers {
+    margin-bottom: 13px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: rem(30px);
+    text-transform: uppercase;
 
+    @include mobile {
+      font-size: rem(14px);
+      line-height: rem(30px);
+    }
+  }
+  &__followers > span {
+    margin-bottom: 13px;
+    font-weight: 700;
+    font-size: rem(36px);
+    line-height: rem(30px);
+    text-transform: uppercase;
+
+    @include mobile {
+      font-size: rem(24px);
+      line-height: rem(30px);
+    }
+  }
+
+  &__divider {
+    margin-bottom: 14px;
+  }
+}
 
 .social-net {
+  display: flex;
+  &__text {
+    margin-right: 30px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  &__gallary {
     display: flex;
-    &__text {
-        margin-right: 30px;
-        font-style: italic;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 15px;        
-        
-    }
-    &__gallary {
-        display: flex;
-        flex-grow: 1;
-        justify-content:space-between;
-        margin-bottom: 50px;
+    flex-grow: 1;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
 
-        @include mobile{
-          max-width: 233px;
-        }
+    @include tablet {
+      height: 16px;
+      width: 16px;
     }
-    &__icon {
-        width: 24px;
-        height: 24px;
+
+    @include mobile {
     }
+  }
 }
 
-.blogs{
-    
-    &__container {
+.blogs {
+  &__container {
+    @include mobile {
+      max-width: 520px;
     }
-    &__row {
-        display: flex;
-        padding-bottom: 20px;
-    }
-    &__image {
-        width: 170px;
-        height: 105px;
-    }
-    &__content {
-        padding-left: 30px;
-    }
-    &__discription {
-      margin-bottom: 8px;
-      font-weight: 700;
-      font-size: 18px;
-      line-height: 21px;
-      text-transform: uppercase;
+  }
+  &__row {
+    display: flex;
+    padding-bottom: 20px;
+  }
+  &__image {
+    width: 170px;
+    height: 105px;
+  }
+  &__content {
+    align-content: center;
+    padding-left: 30px;
+  }
+  &__discription {
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    align-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
 
-      @include tablet{
-        font-size: rem(14px);
-        line-height: rem(16px);
-        
-      }
+    @include tablet {
+      padding: 10px 10px;
+      font-size: rem(14px);
+      line-height: rem(16px);
     }
-    &__date {
-    }
+  }
+  &__date {
+    align-content: center;
+  }
 }

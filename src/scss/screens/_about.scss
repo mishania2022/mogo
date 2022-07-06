@@ -9,7 +9,7 @@
     &__gallery{
       display: flex;
       gap: 20px;
-      justify-content: space-between;
+      justify-content: space-around;
 
       @include mobile{
         flex-direction: column;
@@ -21,6 +21,11 @@
     &__case{
       width: 370px;
       height: 338px;
+
+      @include tablet{
+        width: 320px;
+        height: 282px;
+      }
 
       @include mobile{
         width: 288px;
