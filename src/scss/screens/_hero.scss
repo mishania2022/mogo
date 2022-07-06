@@ -142,7 +142,10 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
-    border-top: 4px solid #f38281;
+
+    &:hover {
+      border-top: 4px solid #f38281;
+    }
 
     @include tablet {
       font-size: rem(24px);

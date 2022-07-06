@@ -1,8 +1,12 @@
 .footer {
   margin-bottom: 50px;
   &__container {
-    max-width: 1170px;
+    max-width: 1370px;
     padding: 42px 10px 31px 10px;
+
+    @include mobile {
+      margin: 0 auto;
+    }
   }
 
   &__wrapper {
@@ -15,11 +19,10 @@
   }
 
   &__mogo {
-    max-width: 300px;
-    margin-inline: auto;
-    align-content: center;
-    justify-self: center;
-    align-content: center;
+    width: 400px;
+    @include mobile {
+      margin: 0 auto;
+    }
   }
 
   &__logo {
@@ -28,6 +31,7 @@
 
   &__form {
     max-width: 270px;
+    width: 55px;
     display: flex;
 
     @include tablet {
@@ -44,6 +48,9 @@
 
   &__blogs {
     flex-basis: 470px;
+    @include mobile {
+      margin: 0 auto;
+    }
   }
 
   &__title {
@@ -77,7 +84,7 @@
   &__slogan-instagram {
   }
   &__input {
-    //max-width: 180px;
+    width: 220px;
     padding: 15px 0;
     font-weight: 400;
     font-size: 18px;
@@ -88,15 +95,18 @@
     @include tablet {
       font-size: rem(14px);
       line-height: rem(16px);
-      //max-width: 140px;
     }
     @include mobile {
-        width: 100%;
+      width: 288px;
+      @include mobile {
+        margin-left: 25px;
       }
+    }
   }
   &__submit {
+    width: 150px;
     padding: 15px;
-    margin-top: 10px;
+    margin-right: 10px;
     background-color: map-get($colors, green);
     font-weight: 700;
     font-size: 18px;
@@ -107,11 +117,15 @@
     @include tablet {
       font-size: rem(14px);
       line-height: rem(16px);
-      //max-width: 130px;
+      width: 130px;
     }
     @include mobile {
-        width: 100%;
+      width: 288px;
+      margin-top: 10px;
+      @include mobile {
+        margin-left: 25px;
       }
+    }
   }
   &__end {
     font-weight: 700;
@@ -125,7 +139,8 @@
 .mogo {
   &__discription {
     margin-bottom: 35px;
-    
+    align-content: center;
+
     @include mobile {
       font-size: rem(16px);
       line-height: rem(18px);
@@ -195,6 +210,9 @@
   &__container {
     @include mobile {
       max-width: 520px;
+      @include mobile {
+        margin: 0 auto;
+      }
     }
   }
   &__row {

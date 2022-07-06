@@ -4,17 +4,17 @@ $kaushan-font-stack: "Kaushan Script", Arial, sans-serif;
 $raleway-font-stack: "Raleway", Arial, sans-serif;
 $montserrat-font-stack: "Montserrat", Arial, sans-serif;
 
-$colors:(
-  red:#f38281,
-  yellow:#F9EFCF,
-  green:#95E1D3,
-  dark:#2d3033,
-  gray:#F5F5F5,
-  LightGray: #F8F8F8,
-  white: #FFFFFF,
+$colors: (
+  red: #f38281,
+  yellow: #f9efcf,
+  green: #95e1d3,
+  dark: #2d3033,
+  gray: #f5f5f5,
+  LightGray: #f8f8f8,
+  white: #ffffff,
+  orange: #d8a116,
+  DarkGreen:#607208
 );
-
-
 
 $breakpoints: (
   mobile: rem(768px),
