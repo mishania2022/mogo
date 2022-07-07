@@ -19,7 +19,7 @@
   }
 
   &__mogo {
-    width: 400px;
+    max-width: 400px;
     @include mobile {
       margin: 0 auto;
     }
@@ -30,19 +30,19 @@
   }
 
   &__form {
-    max-width: 270px;
-    width: 55px;
+    margin-top: 30px;
     display: flex;
 
     @include tablet {
-      max-width: 317px;
       font-size: rem(24px);
       line-height: rem(28px);
-      padding-top: 13px;
+      margin-top: 10px;
     }
 
-    @include tablet {
+    @include mobile {
       display: block;
+      margin-top: 0px;
+      margin-top: 0px;
     }
   }
 
@@ -60,6 +60,8 @@
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    margin-left: 30%;
+    margin-top: 15px;
   }
   &__instagram {
     flex-basis: 270px;
@@ -84,27 +86,24 @@
   &__slogan-instagram {
   }
   &__input {
-    width: 220px;
     padding: 15px 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
     color: #c6cbcd;
+    border: 2px solid;
 
     @include tablet {
       font-size: rem(14px);
       line-height: rem(16px);
     }
     @include mobile {
-      width: 288px;
-      @include mobile {
-        margin-left: 25px;
-      }
+      max-width: 390px;
+      min-width: 360px;
     }
   }
   &__submit {
-    width: 150px;
     padding: 15px;
     margin-right: 10px;
     background-color: map-get($colors, green);
@@ -120,11 +119,9 @@
       width: 130px;
     }
     @include mobile {
-      width: 288px;
+      max-width: 390px;
+      min-width: 360px;
       margin-top: 10px;
-      @include mobile {
-        margin-left: 25px;
-      }
     }
   }
   &__end {
@@ -133,6 +130,15 @@
     line-height: 15px;
     text-align: center;
     text-transform: uppercase;
+    @include tablet {
+      font-weight: 700;
+      font-size: 13px;
+    }
+    @include mobile {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 15px;
+    }
   }
 }
 
@@ -218,10 +224,22 @@
   &__row {
     display: flex;
     padding-bottom: 20px;
+    @include tablet {
+      @include mobile {
+        margin: 0 auto;
+      }
+    }
   }
   &__image {
     width: 170px;
     height: 105px;
+    @include tablet {
+      max-width: 115px;
+      height: 71px;
+      @include mobile {
+        margin: 0 auto;
+      }
+    }
   }
   &__content {
     align-content: center;
@@ -240,6 +258,12 @@
       padding: 10px 10px;
       font-size: rem(14px);
       line-height: rem(16px);
+      font-family: Raleway;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
     }
   }
   &__date {
