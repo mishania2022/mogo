@@ -148,7 +148,7 @@
 .mogo {
   &__discription {
     margin-bottom: 35px;
-    align-content: center;
+    text-align: center;
 
     @include mobile {
       font-size: rem(16px);
@@ -252,7 +252,7 @@
   &__discription {
     margin-bottom: 8px;
     padding: 10px 15px;
-    align-content: center;
+    text-align:justify;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
