@@ -189,6 +189,10 @@
 
 .social-net {
   display: flex;
+  margin-bottom: 45px;
+  @include mobile {
+    margin-bottom: 25px;
+  }
   &__text {
     margin-right: 30px;
     font-style: italic;
