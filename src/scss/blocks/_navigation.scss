@@ -13,6 +13,7 @@
     font-size: rem(13px);
     line-height: rem(15px);
   }
+  
   @include mobile {
     flex-direction: column;
   }
@@ -28,7 +29,7 @@
       color: #edd789e6;
     }
 
-    &:active{
+    &:active {
       color: map-get($colors, DarkGreen);
     }
   }

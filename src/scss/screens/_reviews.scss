@@ -22,6 +22,7 @@
       display: none;
     }
   }
+
   &-pagination {
     display: none;
 
@@ -52,7 +53,8 @@
       display: none;
     }
   }
-  &__icon-messege {
+
+  &__icon-message {
     width: 100px;
     height: 100px;
     background-image: url(/src/images/reviews/messege.svg);
@@ -74,7 +76,7 @@
       display: block;
     }
   }
-  &__discription {
+  &__description {
     padding: 10px 5px;
     margin-bottom: 21px;
     text-align: center;
@@ -89,9 +91,11 @@
       line-height: rem(21px);
     }
   }
+
   &__content {
     display: flex;
   }
+
   &__divider {
     height: 4px;
     margin: 27px 56px 0 0;
@@ -99,7 +103,8 @@
     width: 70px;
     border: none;
   }
-  &__autor {
+
+  &__author {
     font-family: $kaushan-font-stack;
     font-weight: 400;
     font-size: 30px;

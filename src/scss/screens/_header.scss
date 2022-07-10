@@ -10,17 +10,17 @@
     justify-content: space-between;
     padding: 40px 10px 32px;
     margin: 0 auto;
-    }
-      
+  }
+
   &__navigation {
     margin-left: auto;
 
-    @include mobile{
-      display: none;   
+    @include mobile {
+      display: none;
       width: 100%;
     }
-        
   }
+
   &__toggler {
     object-position: top;
     cursor: pointer;
@@ -44,5 +44,5 @@
     @include mobile {
       width: 103px;
     }
-  }     
+  }
 }
