@@ -84,7 +84,8 @@
     }
   }
 
-  &__overlay_long {
+  &__overlay_long{
+    
     @include mobile {
       padding-top: 120px;
     }
