@@ -6,7 +6,7 @@
     height: 756px;
 
     @include mobile {
-      grid-area: 1/2 / span 3 / span 1;
+      grid-area: 1/2 / span 3 / span 1;      
     }
   }
   &_width {
@@ -84,7 +84,11 @@
     }
   }
 
+<<<<<<< HEAD
   &__overlay_long {
+=======
+  &__overlay_long{
+>>>>>>> 6c1228346e35ecc2af9c0dec7336b0882df250f2
     @include mobile {
       padding-top: 120px;
     }
