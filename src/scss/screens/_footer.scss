@@ -1,0 +1,320 @@
+.footer {
+  margin-bottom: 50px;
+  &__container {
+    max-width: 1370px;
+    padding: 42px 10px 31px 10px;
+
+    @include mobile {
+      margin: 0 auto;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  &__mogo {
+    max-width: 400px;
+
+    @include mobile {
+      margin: 0 auto;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 46px;
+  }
+
+  &__form {
+    margin-top: 30px;
+    display: flex;
+
+    @include tablet {
+      font-size: rem(24px);
+      line-height: rem(28px);
+      margin-top: 10px;
+    }
+
+    @include mobile {
+      display: block;
+      margin-top: 0px;
+      margin-top: 0px;
+    }
+  }
+
+  &__blogs {
+    flex-basis: 470px;
+
+    @include mobile {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    align-content: center;
+    padding-bottom: 34px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  &__instagram {
+    flex-basis: 270px;
+  }
+
+  &__slogan-instagram {
+    text-align: center;
+  }
+
+  &__gallery-instagram {
+    height: 270px;
+    width: 270px;
+    display: grid;
+    margin-inline: auto;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 1px;
+
+    @include tablet {
+      height: 289px;
+      width: 289px;
+    }
+
+    @include mobile {
+      max-width: 280px;
+    }
+  }
+
+  &__input {
+    padding: 15px 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #c6cbcd;
+    border: 2px solid;
+    cursor: pointer;
+
+    &:hover {
+      background-color: aquamarine;
+    }
+
+    &:active {
+      background-color: aqua;
+    }
+
+    @include tablet {
+      font-size: rem(14px);
+      line-height: rem(16px);
+    }
+
+    @include mobile {
+      max-width: 390px;
+      min-width: 360px;
+      display: block;
+      margin: 10px auto;
+    }
+  }
+
+  &__submit {
+    padding: 15px;
+    margin-right: 10px;
+    background-color: map-get($colors, green);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: aquamarine;
+    }
+
+    &:active {
+      background-color: aqua;
+    }
+
+    @include tablet {
+      font-size: rem(14px);
+      line-height: rem(16px);
+      width: 130px;
+    }
+
+    @include mobile {
+      max-width: 390px;
+      min-width: 360px;
+      margin-top: 10px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__end {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include tablet {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+}
+
+.mogo {
+  &__description {
+    margin-bottom: 35px;
+    text-align: center;
+
+    @include mobile {
+      font-size: rem(16px);
+      line-height: rem(18px);
+    }
+  }
+
+  &__followers {
+    margin-bottom: 13px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: rem(30px);
+    text-transform: uppercase;
+    text-align: center;
+
+    @include mobile {
+      font-size: rem(14px);
+      line-height: rem(30px);
+    }
+  }
+
+  &__followers-amount {
+    margin-bottom: 13px;
+    font-weight: 700;
+    font-size: rem(36px);
+    line-height: rem(30px);
+    text-transform: uppercase;
+
+    @include mobile {
+      font-size: rem(24px);
+      line-height: rem(30px);
+    }
+  }
+
+  &__divider {
+    margin-bottom: 14px;
+  }
+}
+
+.social-net {
+  display: flex;
+  margin-bottom: 70px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    margin-right: 30px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 45px;
+  }
+
+  &__gallery {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    &:hover{
+      border: 1px solid #efe944;
+      border-radius: 3px;
+    }
+
+    &:active{
+      border: 1px solid #f8f01c;
+      border-radius: 3px;
+      background-color: aquamarine;
+    }
+
+
+    @include tablet {
+      height: 16px;
+      width: 16px;
+    }
+  }
+}
+
+.blogs {
+  &__container {
+    @include mobile {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+  }
+
+  &__row {
+    display: flex;
+    padding-bottom: 20px;
+  }
+
+  &__image {
+    width: 170px;
+    height: 105px;
+
+    @include tablet {
+      max-width: 115px;
+      height: 71px;
+    }
+  }
+
+  &__content {
+    align-content: center;
+    padding-left: 30px;
+  }
+
+  &__description {
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    text-align: justify;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    @include tablet {
+      padding: 10px 10px;
+      font-size: rem(14px);
+      line-height: rem(16px);
+      font-family: Raleway;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+
+  &__date {
+    align-content: center;
+  }
+}

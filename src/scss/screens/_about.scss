@@ -1,0 +1,30 @@
+.about {
+  text-align: center;
+  padding: 42px 0 108px;
+
+  &__gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__case {
+    width: 370px;
+    height: 338px;
+
+    @include tablet {
+      width: 320px;
+      height: 282px;
+    }
+
+    @include mobile {
+      width: 288px;
+      height: 258px;
+    }
+  }
+}
