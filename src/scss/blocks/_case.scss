@@ -6,7 +6,7 @@
     height: 756px;
 
     @include mobile {
-      grid-area: 1/2 / span 3 / span 1;
+      grid-area: 1/2 / span 3 / span 1;      
     }
   }
   &_width {
@@ -23,12 +23,12 @@
   }
 
   &__icon {
+    display: block;
     margin: 0 auto;
     padding-bottom: 67px;
 
     @include mobile {
-      display: none;
-      padding-bottom: 200px;
+      padding-bottom: 30px;
     }
   }
 
@@ -48,8 +48,7 @@
       font-size: rem(24px);
       line-height: rem(28px);
       display: inline-block;
-      margin-top: 100px;
-      display: none;
+      margin-top: 30px;
     }
   }
 
@@ -78,6 +77,16 @@
 
     &:hover {
       opacity: 1;
+    }
+
+    @include mobile {
+      padding-top: 30px;
+    }
+  }
+
+  &__overlay_long{
+    @include mobile {
+      padding-top: 120px;
     }
   }
 
