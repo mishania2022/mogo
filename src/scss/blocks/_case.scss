@@ -6,7 +6,7 @@
     height: 756px;
 
     @include mobile {
-      grid-area: 1/2 / span 3 / span 1;
+      grid-area: 1/2 / span 3 / span 1;      
     }
   }
   &_width {
