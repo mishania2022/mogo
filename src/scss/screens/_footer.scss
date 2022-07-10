@@ -20,6 +20,7 @@
 
   &__mogo {
     max-width: 400px;
+
     @include mobile {
       margin: 0 auto;
     }
@@ -48,6 +49,7 @@
 
   &__blogs {
     flex-basis: 470px;
+
     @include mobile {
       margin: 0 auto;
     }
@@ -59,16 +61,19 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
     margin-top: 15px;
     text-align: center;
   }
+
   &__instagram {
     flex-basis: 270px;
   }
-  &__slogan-instagram{
+
+  &__slogan-instagram {
     text-align: center;
   }
+
   &__gallery-instagram {
     height: 270px;
     width: 270px;
@@ -86,8 +91,7 @@
       max-width: 280px;
     }
   }
-  &__slogan-instagram {
-  }
+
   &__input {
     padding: 15px 0;
     font-weight: 400;
@@ -101,11 +105,15 @@
       font-size: rem(14px);
       line-height: rem(16px);
     }
+
     @include mobile {
       max-width: 390px;
       min-width: 360px;
+      display: block;
+      margin: 10px auto;
     }
   }
+
   &__submit {
     padding: 15px;
     margin-right: 10px;
@@ -121,23 +129,24 @@
       line-height: rem(16px);
       width: 130px;
     }
+
     @include mobile {
       max-width: 390px;
       min-width: 360px;
       margin-top: 10px;
+      display: block;
+      margin: 0 auto;
     }
   }
+
   &__end {
     font-weight: 700;
     font-size: 13px;
     line-height: 15px;
     text-align: center;
     text-transform: uppercase;
+
     @include tablet {
-      font-weight: 700;
-      font-size: 13px;
-    }
-    @include mobile {
       font-weight: 700;
       font-size: 13px;
       line-height: 15px;
@@ -146,7 +155,7 @@
 }
 
 .mogo {
-  &__discription {
+  &__description {
     margin-bottom: 35px;
     text-align: center;
 
@@ -155,6 +164,7 @@
       line-height: rem(18px);
     }
   }
+
   &__followers {
     margin-bottom: 13px;
     font-style: italic;
@@ -169,7 +179,8 @@
       line-height: rem(30px);
     }
   }
-  &__followers > span {
+
+  &__followers-amount {
     margin-bottom: 13px;
     font-weight: 700;
     font-size: rem(36px);
@@ -189,10 +200,12 @@
 
 .social-net {
   display: flex;
-  margin-bottom: 45px;
+  margin-bottom: 70px;
+
   @include tablet {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
+
   &__text {
     margin-right: 30px;
     font-style: italic;
@@ -201,12 +214,14 @@
     line-height: 15px;
     margin-bottom: 45px;
   }
-  &__gallary {
+
+  &__gallery {
     display: flex;
     flex-grow: 1;
     justify-content: space-around;
     margin-bottom: 50px;
   }
+
   &__icon {
     width: 24px;
     height: 24px;
@@ -215,9 +230,6 @@
       height: 16px;
       width: 16px;
     }
-
-    @include mobile {
-    }
   }
 }
 
@@ -225,39 +237,34 @@
   &__container {
     @include mobile {
       max-width: 520px;
-      @include mobile {
-        margin: 0 auto;
-      }
+      margin: 0 auto;
     }
   }
+
   &__row {
     display: flex;
     padding-bottom: 20px;
-    @include tablet {
-      @include mobile {
-        margin: 0 auto;
-      }
-    }
   }
+
   &__image {
     width: 170px;
     height: 105px;
+
     @include tablet {
       max-width: 115px;
       height: 71px;
-      @include mobile {
-        margin: 0 auto;
-      }
     }
   }
+
   &__content {
     align-content: center;
     padding-left: 30px;
   }
-  &__discription {
+
+  &__description {
     margin-bottom: 8px;
     padding: 10px 15px;
-    text-align:justify;
+    text-align: justify;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
@@ -275,6 +282,7 @@
       text-align: left;
     }
   }
+
   &__date {
     align-content: center;
   }
